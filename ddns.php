@@ -14,15 +14,15 @@ function mycurl($url, $type = 'GET', $data = null){
 	curl_close($curl);
 	return $res;
 }
-//执行方法
+//cmd run
 //php_path\php.exe -f "file_path\ddns.php"
 define('LOGIN_TOKEN','API ID,API TOKEN' );
-define('DOMAIN','域名,例如abc.com' );
-define('SUB_DOMAIN','子域名,例如www' );
+define('DOMAIN','you domain,example:abc.com' );
+define('SUB_DOMAIN','you sub domain,example:www' );
 define('IP_SERVER','ip.cip.cc');
 
 
-//当前ip
+//current ip
 $current_ip = mycurl(IP_SERVER);
 
 $domain_post_data = array(
